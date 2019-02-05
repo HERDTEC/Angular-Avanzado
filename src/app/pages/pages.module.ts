@@ -7,6 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { RouterModule } from '@angular/router';
 
 const components = [
   DashboardComponent,
@@ -18,7 +20,7 @@ const components = [
 ];
 @NgModule({
   declarations: [ 
-    components
+    components, UsuarioComponent
   ],
   exports: [
     components
