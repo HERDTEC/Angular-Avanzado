@@ -10,7 +10,7 @@
         </div>
         <br>
         <div class="progress">   
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValuenow]="progresoVerde"
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"  [attr.ariaValuenow]="progresoVerde"
               aria-valuemin="0" aria-valuemax="100" [style.width]= "progresoVerde+'%'"></div>
           </div>
       </div>
@@ -24,14 +24,14 @@
   <div class="col-6">
     <div class="card">
       <div class="card-body">
-        <app-incrementador leyenda="Progreso Azul" [progreso]="progresoAzul"></app-incrementador>
+        <app-incrementador leyenda="Progreso Azul" [progreso]="progresoAzul"  (cambioValor)="progresoAzul=$event"></app-incrementador>
       </div>
     </div>
   </div>
   <div class="col-6">
     <div class="card">
       <div class="card-body">
-          <app-incrementador leyenda="Progreso Verde"  [progreso]="progresoVerde"></app-incrementador>
+          <app-incrementador leyenda="Progreso Verde"  [progreso]="progresoVerde"  (cambioValor)="progresoVerde=$event"></app-incrementador>
       </div>
     </div>
   </div>

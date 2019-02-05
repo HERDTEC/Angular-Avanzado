@@ -13,6 +13,11 @@ export class ProgressComponent implements OnInit {
 
   ngOnInit() {
   }
- 
+  /*actualizarAzul( event: number){
+    this.progresoAzul=event;
+  }
+  actualizarVerde( event: number){
+    this.progresoVerde=event;
+  }*/
 
 }
