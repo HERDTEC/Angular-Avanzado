@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
+import { ServicioComponent } from './servicio/servicio.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
           { path: 'graficas1', component: Graficas1Component },
           { path: 'admUsuario', component: UsuarioComponent },
           { path: 'admTipoUsuario', component: TipoUsuarioComponent },
+          { path: 'admServicio', component: ServicioComponent },
           { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
       ]
   }

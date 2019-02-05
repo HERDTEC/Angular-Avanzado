@@ -10,6 +10,7 @@ import { IncrementadorComponent } from '../componentes/incrementador/incrementad
 import { UsuarioComponent } from './usuario/usuario.component';
 import { RouterModule } from '@angular/router';
 import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
+import { ServicioComponent } from './servicio/servicio.component';
 
 const components = [
   DashboardComponent,
@@ -21,7 +22,7 @@ const components = [
 ];
 @NgModule({
   declarations: [ 
-    components, UsuarioComponent, TipoUsuarioComponent
+    components, UsuarioComponent, TipoUsuarioComponent, ServicioComponent
   ],
   exports: [
     components
