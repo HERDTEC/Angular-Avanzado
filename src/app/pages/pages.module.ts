@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../componentes/incrementador/incrementador.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { RouterModule } from '@angular/router';
+import { TipoUsuarioComponent } from './tipo-usuario/tipo-usuario.component';
 
 const components = [
   DashboardComponent,
@@ -20,7 +21,7 @@ const components = [
 ];
 @NgModule({
   declarations: [ 
-    components, UsuarioComponent
+    components, UsuarioComponent, TipoUsuarioComponent
   ],
   exports: [
     components
