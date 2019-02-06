@@ -6,17 +6,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { ExampleComponent } from './public/example/example.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
 import { FormsModule } from '@angular/forms';
+import { PublicModule } from './public/public.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    ExampleComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     PagesModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    PublicModule
   ],
   providers: [
   

@@ -17,12 +17,15 @@ const components = [
     Graficas1Component,
     ProgressComponent,
     PagesComponent,
+    UsuarioComponent, 
+    TipoUsuarioComponent, 
+    ServicioComponent,
 
     IncrementadorComponent
 ];
 @NgModule({
   declarations: [ 
-    components, UsuarioComponent, TipoUsuarioComponent, ServicioComponent
+    components, 
   ],
   exports: [
     components
